@@ -1,0 +1,148 @@
+/* Autor: Sergio Filho */
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+@import compass/reset
+@import resetOgilvy
+@import compass/css3
+
+
+
+@mixin titulo($size, $cor)
+	font: bold $size "LeagueGothic-Regular"
+	color: $cor
+	line-height: 0.9em
+	text-transform: uppercase
+	text-align: center
+
+@mixin code($wid, $size)
+	width: $wid
+	height: 300px
+	padding: 15px
+	float: left
+	margin-left: 135px
+	background: #3F3F3F
+	font: $size 'Menlo'
+	text-align: left
+
+/* ==========================================================================
+   @Font-face
+   ========================================================================== */
+@import fontface
+/* ==========================================================================
+   Variable
+   ========================================================================== */
+@import variaveis
+/* ==========================================================================
+   Sprite
+   ========================================================================== */
+@import sprite
+/* ==========================================================================
+   Structure
+   ========================================================================== */ 
+#main
+	position: relative
+	width: 800px
+	height: 600px
+	margin: 0 auto
+
+.enable
+	top: 0
+	left: 0
+
+.disable
+	top: 0
+	left: 450px
+	//opacity: 0
+
+/* ==========================================================================
+   Style
+   ========================================================================== */
+body
+	+background-image(radial-gradient(#f8f8f8, #959595))
+
+.reveal 
+	h1
+		@include titulo(180px, #000)
+		margin-top: 40px
+		+text-shadow(0px 0px 2px #fff, 0px 0px 4px #bbb)
+	h2
+		@include titulo(50px, #fff)
+		margin-top: 30px
+		letter-spacing: 2px 
+		+text-shadow(0px 0px 4px #bbb, 0px 0px 2px #fff)
+	code
+		@include code('','')
+		.id-classe
+			color: #9fe351
+		.var
+			color: #ff8739
+		.val
+			color: #b17abf
+		.seletor
+			color: #fe1b71
+		.prop
+			color: #42c0eb
+		.branco
+			color: #fff
+		.cinza
+			color: #666
+		.term
+			color: #d4d5a7
+	section
+		width: 800px
+
+#slide1
+	p
+		font-family: Arial
+		color: #AEAEAE 
+		text-align: center
+	img
+		position: absolute
+		bottom: -50px
+		left: 60px
+
+#slide3
+	img
+		margin-left: 50px
+		+border-radius(10px)
+
+#slide4
+	p
+		font-size: 14px
+		margin-top: 50px
+
+#slide5
+	code
+		@include code(300px, 14px)
+
+#slide6, #slide7, #slide16
+	@extend #slide5
+
+#slide8, #slide18, #slide20
+	code
+		@include code(700px, 14px)
+
+#slide10, #slide11, #slide12
+	img
+		width: 600px
+	p
+		font-size: 14px
+
+#slide14
+	img
+		width: 470px
+
+#slide17,#slide22
+	img
+		+border-radius(10px)
+
+#slide22
+	p
+		font-size: 14px
+
+
+/* ==========================================================================
+   IE
+   ========================================================================== */
+@import ie

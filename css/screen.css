@@ -1,0 +1,388 @@
+/* Autor: Sergio Filho */
+/* ==========================================================================
+ * Reset
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\000032}}
+body .clear {
+  clear: both;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\000037}}
+body .left {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\000039}}
+body .right {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000311}}
+body .block {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000313}}
+body .inline {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000315}}
+body .none {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000317}}
+body .relative {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000319}}
+body .absolute {
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000321}}
+body .sumir {
+  overflow: hidden;
+  text-indent: -999em;
+}
+
+/* ==========================================================================
+ * @Font-face
+ * ========================================================================== */
+@font-face {
+  font-family: "LeagueGothic-Regular";
+  src: url("fonts/leaguegothicregular.eot");
+  src: url("fonts/leaguegothicregular.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothicregular.woff") format("woff"), url("fonts/leaguegothicregular.ttf") format("truetype"), url("fonts/leaguegothicregular.svg#LeagueGothic-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==========================================================================
+ * Variable
+ * ========================================================================== */
+/* ==========================================================================
+ * Sprite
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/png\/\*\.png}line{font-family:\0000366}}
+.png-sprite, .png-claro, .png-globocom, .png-globoesporte, .png-nike {
+  background: url('/img/png-sd7ec2f874a.png') no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
+.png-claro {
+  background-position: 0 -140px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
+.png-globocom {
+  background-position: 0 -380px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
+.png-globoesporte {
+  background-position: 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
+.png-nike {
+  background-position: 0 -252px;
+}
+
+/* ==========================================================================
+ * Structure
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000343}}
+#main {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000349}}
+.enable {
+  top: 0;
+  left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000353}}
+.disable {
+  top: 0;
+  left: 450px;
+}
+
+/* ==========================================================================
+ * Style
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000361}}
+body {
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #f8f8f8), color-stop(100%, #959595));
+  background-image: -webkit-radial-gradient(#f8f8f8, #959595);
+  background-image: -moz-radial-gradient(#f8f8f8, #959595);
+  background-image: -o-radial-gradient(#f8f8f8, #959595);
+  background-image: radial-gradient(#f8f8f8, #959595);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000365}}
+.reveal h1 {
+  font: bold 180px "LeagueGothic-Regular";
+  color: black;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+  text-shadow: 0px 0px 2px white, 0px 0px 4px #bbbbbb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000369}}
+.reveal h2 {
+  font: bold 50px "LeagueGothic-Regular";
+  color: white;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 4px #bbbbbb, 0px 0px 2px white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000374}}
+.reveal code {
+  width: "";
+  height: 300px;
+  padding: 15px;
+  float: left;
+  margin-left: 135px;
+  background: #3f3f3f;
+  font: "" "Menlo";
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000376}}
+.reveal code .id-classe {
+  color: #9fe351;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000378}}
+.reveal code .var {
+  color: #ff8739;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000380}}
+.reveal code .val {
+  color: #b17abf;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000382}}
+.reveal code .seletor {
+  color: #fe1b71;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000384}}
+.reveal code .prop {
+  color: #42c0eb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000386}}
+.reveal code .branco {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000388}}
+.reveal code .cinza {
+  color: #666666;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000390}}
+.reveal code .term {
+  color: #d4d5a7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000392}}
+.reveal section {
+  width: 800px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\0000396}}
+#slide1 p {
+  font-family: Arial;
+  color: #aeaeae;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\00003100}}
+#slide1 img {
+  position: absolute;
+  bottom: -50px;
+  left: 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\00003106}}
+#slide3 img {
+  margin-left: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\00003111}}
+#slide4 p {
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\00003116}}
+#slide5 code, #slide6 code, #slide7 code, #slide16 code {
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  float: left;
+  margin-left: 135px;
+  background: #3f3f3f;
+  font: 14px "Menlo";
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\00003123}}
+#slide8 code, #slide18 code, #slide20 code {
+  width: 700px;
+  height: 300px;
+  padding: 15px;
+  float: left;
+  margin-left: 135px;
+  background: #3f3f3f;
+  font: 14px "Menlo";
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\00003127}}
+#slide10 img, #slide11 img, #slide12 img {
+  width: 600px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\00003129}}
+#slide10 p, #slide11 p, #slide12 p {
+  font-size: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\00003133}}
+#slide14 img {
+  width: 470px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\00003137}}
+#slide17 img, #slide22 img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/screen\.sass}line{font-family:\00003141}}
+#slide22 p {
+  font-size: 14px;
+}
+
+/* ==========================================================================
+ * IE
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/pie\.scss}line{font-family:\0000327}}
+.pie-element, .bordered, .gradient {
+  behavior: url("/css/PIE.htc");
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/pie\.scss}line{font-family:\0000333}}
+.bordered {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/pie\.scss}line{font-family:\0000338}}
+.gradient {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/pie\.scss}line{font-family:\0000351}}
+.pie-container, .widget {
+  z-index: 0;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/pie\.scss}line{font-family:\0000355}}
+.z-pie-element, .widget h3 {
+  behavior: url("/css/PIE.htc");
+  z-index: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/pie\.scss}line{font-family:\0000370}}
+.has-gradient {
+  behavior: url("/css/PIE.htc");
+  position: relative;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
+  background: -webkit-linear-gradient(#ff0000, #0000ff);
+  background: -moz-linear-gradient(#ff0000, #0000ff);
+  background: -o-linear-gradient(#ff0000, #0000ff);
+  -pie-background: linear-gradient(#ff0000, #0000ff);
+  background: linear-gradient(#ff0000, #0000ff);
+}

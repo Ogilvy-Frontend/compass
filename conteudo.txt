@@ -1,0 +1,37 @@
+- por que o Sass?
+	- é uma forma de escrever css e uma forma agil de escrever css
+	- Processadores
+		- mais conhecidos:
+			- Less
+			- Sass
+			- Stylus
+
+	- Sass é uma extensão do CSS3, acrescentando normas identacao, variáveis, ​​mixins, herança, selector e muito mais. É traduzido para o bem formatado CSS, padrão usando a ferramenta de linha de comando ou um plug-in web-framework.
+
+	- sintaxe scss e sass
+
+	- Organizacao com os includes, arquivos separados
+	- Mixins
+	- variaveis
+	- seletor Inheritance (@extend)
+	- sintaxe scss e sass
+	- convert css to sass (por o link)
+	- link do sass
+
+
+- Aliado do Sass, o compass
+
+	por que compass?
+		- PIE
+		- sprite
+		- bibliotecas
+		- installando o compass
+
+
+- link do github
+
+
+link app sass inspector
+	https://chrome.google.com/webstore/detail/sass-inspector/lkofmbmllpgfbnonmnenkiakimpgoamn?utm_source=chrome-ntp-icon
+
+	http://dlo.me/archives/2013/01/24/using-source-maps-debug-compass-sass/

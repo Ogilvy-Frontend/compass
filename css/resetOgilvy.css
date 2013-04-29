@@ -1,0 +1,40 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\000032}}
+body .clear {
+  clear: both;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\000037}}
+body .left {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\000039}}
+body .right {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000311}}
+body .block {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000313}}
+body .inline {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000315}}
+body .none {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000317}}
+body .relative {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000319}}
+body .absolute {
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/slide\/sass\/resetOgilvy\.sass}line{font-family:\0000321}}
+body .sumir {
+  overflow: hidden;
+  text-indent: -999em;
+}

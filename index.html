@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Front-end SASS/COMPASS</title>
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" href="css/screen.css">
+	</head>
+
+	<body class="gradient-slide">
+		<div class="reveal">
+			<div class="slides">
+				<section id="slide1" class="absolute enable">
+					<h1>Front-end Compass/Sass</h1>
+					<h2>Sergio filho</h2>
+					<p>Front-end Ogilvy Recife</p>
+				</section>
+				
+				<section id="slide2">
+					<h1>O que é o Sass?</h1>
+					<p>É uma forma agil de escrever css, acrescentado a normas identação, variáveis, ​​mixins, herança e muito mais. É compilado para formato CSS, usando a ferramenta de linha de comando.</p>
+					<img src="img/debugger.png" alt="">
+				</section>
+
+				<section id="slide3">
+					<h1>O quem usa?</h1>
+					<img src="img/globocom.png" alt="">
+					<img src="img/globoesporte.png" alt="">
+					<img src="img/nike.png" alt="">
+					<img src="img/claro.png" alt="">
+				</section>
+
+				<section id="slide4">
+					<h1>Sass</h1>
+					<ul>
+						<li>Variáveis</li>
+						<li>Herança</li>
+						<li>Mixins</li>
+						<li>Organização com @imports</li>
+						<li>Ferramentas de conversão</li>
+						<li>Porque o Sass?</li>
+					</ul>
+					<img src="img/sass.png" alt=""><br />
+					<p>http://sass-lang.com/</p>
+				</section>
+
+				<section id="slide5">
+					<h1>Variavéis</h1>
+					<h2>SASS / CSS</h2>
+					<code contenteditable class="javascript">
+						<span class="var">$preto:<strong class="val"> #000</strong></span><br />
+						<span class="var">$branco:<strong class="val"> #fff</strong></span><br />
+						<span class="var">$cinza:<strong class="val"> #333</strong></span><br />
+						<span class="var">$borda:<strong class="val"> 1px solid #ccc</strong></span><br />
+						<br />
+						<br />
+						<br />
+						<span class="seletor">div</span><br />
+						<span class="prop">&nbsp;&nbsp;width: <strong class="val">200px</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;height: <strong class="val">100px</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;boder-top: <strong class="var">$borda</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;background: <strong class="var">$cinza</strong></span>
+					</code>
+
+					<code contenteditable class="javascript">
+						<span class="seletor">div </span><span class="branco">{</span><br />
+						<span class="prop">&nbsp;&nbsp;width: <strong class="val">200px;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;height: <strong class="val">100px;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;boder-top: <strong class="val">1px solid #ccc;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;background: <strong class="val">#333;</strong></span><br />
+						<span class="branco">}</span>
+					</code>
+				</section>
+
+				<section id="slide6">
+					<h1>Herança</h1>
+					<h2>SASS / CSS</h2>
+					<code contenteditable class="javascript">
+						<span class="id-classe">#slide5<br />
+						<span class="seletor">&nbsp;&nbsp;code</span></span><br />
+						<span class="seletor">&nbsp;&nbsp;@include code(<strong class="val">300px, 14px</strong>)</span></span>
+						<br />
+						<br />
+						<br />
+						<span class="id-classe">#slide6<br />
+						<span class="branco">&nbsp;&nbsp;@extend</span>
+						<span class="id-classe"> #slide5</span>
+					</code>
+
+					<code contenteditable class="javascript">
+						<span class="id-classe">#slide5</span>
+						<span class="seletor">code, </span>
+						<span class="id-classe">#slide6</span>
+						<span class="seletor">code</span>
+						<span class="branco">{</span><br />
+						<span class="prop">&nbsp;&nbsp;width: <strong class="val">200px;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;height: <strong class="val">100px;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;float: <strong class="val">left;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;margin-left: <strong class="val">135px;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;background: <strong class="val">#3f3f3f;</strong></span><br />
+						<span class="branco">}</span>
+					</code>
+				</section>
+				
+				<section id="slide7">
+					<h1>@mixin</h1>
+					<h2>SASS / CSS</h2>
+					<code contenteditable class="javascript">
+						<span class="seletor">
+							@mixin code(<strong class="var">$wid, $size</strong>)
+						</span>
+						<br />
+						<span class="prop">&nbsp;&nbsp;width: </span>
+						<span class="var">$wid</span>
+						<br />
+						<span class="prop">&nbsp;&nbsp;height: </span>
+						<strong class="val">200px</strong>
+						<br />
+						<span class="prop">&nbsp;&nbsp;padding: </span>
+						<strong class="val">15px</strong>
+						<br />
+						<span class="prop">&nbsp;&nbsp;margin-left: </span>
+						<strong class="val">135px</strong>
+						<br />
+						<span class="prop">&nbsp;&nbsp;background: </span>
+						<strong class="val">#3F3F3F</strong>
+						<br />
+						<span class="prop">&nbsp;&nbsp;font: </span>
+						<strong class="var">$size</strong>
+						<strong class="branco">'Menlo'</strong>
+						<br />
+						<br />
+						<br />
+						<br />
+						<span class="id-classe">#slide5</span><br />
+						<span class="seletor">&nbsp;&nbsp;code</span><br/>
+						<span class="seletor">&nbsp;&nbsp;&nbsp;&nbsp;@include code(<strong class="val">300px, 14px</strong>)</span></span>
+
+					</code>
+
+					<code contenteditable class="javascript">
+						<span class="id-classe">#slide5</span>
+						<span class="seletor">code, </span>
+						<span class="id-classe">#slide6</span>
+						<span class="seletor">code</span>
+						<span class="branco">{</span><br />
+						<span class="prop">&nbsp;&nbsp;width: <strong class="val">200px;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;height: <strong class="val">100px;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;float: <strong class="val">left;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;margin-left: <strong class="val">135px;</strong></span><br />
+						<span class="prop">&nbsp;&nbsp;background: <strong class="val">#3f3f3f;</strong></span><br />
+						<span class="branco">}</span>
+					</code>
+				</section> 
+
+				<section id="slide8">
+					<h1>@import</h1>
+					<h2>SASS / CSS</h2>
+					<code contenteditable class="javascript">
+						<span class="cinza">
+							/* ==========================================================================
+						   Reset
+						   ========================================================================== */
+						</span>
+						<br />
+						<span class="seletor">@import resetOgilvy</span>
+						<br />
+						<br />
+						<span class="cinza">
+							/* ==========================================================================
+						   @Font-face
+						   ========================================================================== */
+						</span>
+						<br />
+						<span class="seletor">@import fontface</span>
+						<br />
+						<br />
+						<span class="cinza">
+							/* ==========================================================================
+						   @Variable
+						   ========================================================================== */
+						</span>
+						<br />
+						<span class="seletor">@import variaveis</span>
+					</code>
+				</section> 
+
+				<section id="slide9">
+					<h1>e para debugar?</h1>
+					<img src="img/debugger.png" alt="">
+				</section>
+
+				<section id="slide10">
+					<h1>sass inspector</h1>
+					<img src="img/app-chrome.png" alt="">
+					<p>Chrome: https://chrome.google.com/webstore/detail/sass-inspector/lkofmbmllpgfbnonmnenkiakimpgoamn?utm_source=chrome-ntp-icon</p>
+				</section>
+				
+				<section id="slide11">
+					<h1>firesass</h1>
+					<img src="img/firefox.png" alt="">
+					<p>Firefox: https://addons.mozilla.org/pt-br/firefox/addon/firesass-for-firebug/</p>
+				</section>
+
+				<section id="slide12">
+					<h1>conversores</h1>
+					<img src="img/conversor.png" alt="">
+					<p>http://css2sass.heroku.com/</p>
+				</section>
+
+				<section id="slide13">
+					<h1>Porque o sass?</h1>
+					<img src="img/debugger.png" alt="">
+				</section>
+
+				<section id="slide14">
+					<h1>Nosso aliado!</h1>
+					<img src="img/compass.png" alt="">
+				</section>
+
+				<section id="slide15">
+					<h1>Compass</h1>
+					<p>É um framework open-source, com diversos mixins, plugins, extensões...</p>
+				</section> 
+
+				<section id="slide22">
+					<h1>compass</h1>
+					<ul>
+						<li>@mixin</li>
+						<li>Sprite</li>
+						<li>PIE</li>
+						<li>Install</li>
+					</ul>
+					<img src="img/compass2.png" alt=""/><br />
+					<p>http://compass-style.org/</p>
+				</section>
+
+				<section id="slide16">
+					<h1>@mixin</h1>
+					<h2>sass/compass</h2>
+					<code contenteditable class="javascript" style="margin-left:135px">
+						<span class="seletor">
+							@mixin border-radius(<strong class="var">$px</strong>)
+						</span>
+						<br />
+						<span class="branco">&nbsp;&nbsp;-webkit-<span class="prop">border-radius:</span></span>
+						<span class="var">$px</span>
+						<br />
+						<span class="branco">&nbsp;&nbsp;-moz-<span class="prop">border-radius:</span></span>
+						<span class="var">$px</span>
+						<br />
+						<span class="branco">&nbsp;&nbsp;-ms-<span class="prop">border-radius:</span></span>
+						<span class="var">$px</span>
+						<br />
+						<span class="branco">&nbsp;&nbsp;-o-<span class="prop">border-radius:</span></span>
+						<span class="var">$px</span>
+						<br/>
+						<span class="prop">&nbsp;&nbsp;border-radius:</span>
+						<span class="var">$px</span>
+						<br />
+						<br />
+						<br />
+						<br />
+						<span class="id-classe">#slide5</span><br />
+						<span class="seletor">&nbsp;&nbsp;code</span><br/>
+						<span class="seletor">&nbsp;&nbsp;&nbsp;&nbsp;@include border-radius(<strong class="val">10px</strong>)</span>
+					</code>
+
+					<code contenteditable class="javascript" style="margin-left:50px">
+						<span class="id-classe">#slide5</span><br />
+						<span class="seletor">&nbsp;&nbsp;code</span><br/>
+						<span class="seletor">&nbsp;&nbsp;&nbsp;&nbsp;+border-radius(<strong class="val">10px</strong>)</span>
+					</code>
+				</section> 
+				
+				<section id="slide17">
+					<h1>sprite</h1>
+					<img src="img/chato.jpg" alt="">
+				</section>
+				
+				<section id="slide18">
+					<h1>sprite</h1>
+					<code>
+						<span class="seletor">@import </span>
+						<span class="var">"png/*.png";</span><br />
+						<span class="seletor">@include</span>
+						<span class="prop">all-png-sprites;</span>
+					</code>
+				</section>
+				
+				<section id="slide19">
+					<h1>PIE</h1>
+					<img src="img/emocionado.png" alt="">
+				</section>
+
+				<section id="slide20">
+					<h1>Install</h1>
+					<code>
+						<span class="cinza">// Install</span><br />
+						<span class="term">$ gem update --system</span><br />
+						<span class="term">$ gem install compass</span>
+						<br />
+						<br />
+						<br />
+						<span class="term">$ compass create</span>
+						<span class="cinza">// Criar um projeto do zero</span>
+						<br />
+						<span class="term">$ compass watch</span>
+						<span class="cinza">// Pede para o compass ficar observando os arquivos sass</span>
+						<br />
+						<span class="term">$ compass init</span>
+						<span class="cinza">// Inicia um o compass em projeto ja existente</span>
+						<br />
+						<span class="term">$ compass compile</span>
+						<span class="cinza">// Compila os arquivos sass em css</span>
+						<br />
+						<span class="term">$ compass clean</span>
+						<span class="cinza">// Apaga todos os arquivos sass e cache</span>
+					</code>
+				</section>
+
+				<section>
+					<h1>Obrigado!</h1>
+					<p>github.com/Ogilvy-Frontend</p>
+				</section>
+			
+			</div>
+		</div>
+	</body>
+	<script src="js/plugins.js"></script>
+	<script src="js/reveal.min.js"></script>
+	<script src="js/util.js"></script>
+</html>
